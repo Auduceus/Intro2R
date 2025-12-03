@@ -26,6 +26,6 @@ Bootstrap function
 \examples{
 \dontrun{
 sam=rnorm(20,mean=10,sd=2)
-myboot(10000,x=sam,fun=function(x) mean(x)/median(x),alpha=0.05,xlab="mean(x)/median(x)",col="Blue")
+myboot(iter=10000, x=sam, fun="mean", alpha=0.05, xlab="mean")
 }
 }

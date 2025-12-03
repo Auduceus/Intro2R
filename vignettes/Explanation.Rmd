@@ -21,7 +21,32 @@ library(Intro2R)
 
 # Introduction
 
-This is essentially the github package for functions we have done through the semester. For whatever reason, I never kept the functions within one package and have made several. 
+This is essentially the github package for functions we have done throughout the semester, with some data as well.
+
+## Scatterhist
+
+```{r}
+with(ddt, scatterhist(LENGTH,WEIGHT, xlab="LENGTH"))
+```
+
+## Uniform Central Limit Theorem
+
+```{r}
+mycltu(n=3, iter=10000, a = 0, b = 10)
+```
+
+## Hypergeometric Simulation
+
+```{r}
+myhyper(iter=100,n=5, N=20,r=12)
+```
+
+## Bootstrap Function
+
+```{r}
+sam=rnorm(20,mean=10,sd=2)
+myboot(iter=10000, x=sam, fun="mean", alpha=0.05, xlab="mean")
+```
 
 
 
